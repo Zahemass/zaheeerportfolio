@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/%C3%87art_app_beyaz_%282%29.png/600px-%C3%87art_app_beyaz_%282%29.png" type="image/x-icon" />
+  
+    <title>Mohammed Zaheer M</title>
+
+    <!--Font Awesome-->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!--Custom Css-->
+    <link rel="stylesheet" href="./general css and js components/style.css">
+    <link rel="stylesheet" href="./styles/Contact.css" />
+</head>
+<body>
+    <div class="cursor"></div>
+
+    <!--Social Link-->
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/mohammed-zaheer-m-425793215/">
+        <i class="fab fa-linkedin" style="font-size: 25px; color: #888585"></i>
+        <span class="tooltip-link-linkedin">linkedIn</span>
+      </a>
+      <a href="https://github.com/Zahemass">
+        <i class="fa fa-github" style="font-size: 25px; color: #888585"></i>
+        <span class="tooltip-link-github">Github</span>
+      </a>
+    </div>
+
+
+    <!--Center part-->
+    <section class="contact-me" >
+        <div class="Contact-Me">
+            <center><h1 class="name">Contact Me :</h1></center>
+            <p class="para">
+                If you have any questions, want to collaborate on 
+            a project, or just want to say hi, feel free to reach out 
+            to me!
+            </p>
+        </div>
+        <div class="contact-box">
+            <form action="">
+                <input type="text" placeholder="Name" id="nameInput" autocomplete="off" required>
+                <input type="email" placeholder="E-mail"  id="emailInput" autocomplete="off" required>
+                <textarea name="" id="messageInput" placeholder="Message" maxlength="150" autocomplete="off" required></textarea>
+                <button> Send Message </button>
+            </form>
+            <div class="gui-box" data-tilt>
+              <div class="content-user">
+                <h2>From:</h2>
+                <p id="nameOutput">XXX</p>
+                <p id="emailOutput">YYY</p>
+              </div>
+
+              <div class="content-me">
+                <h2>To:</h2>
+                <p>Mohammed Zaheer M</p>
+                <p>zaheemass009@fmail.com</p>
+              </div>
+
+              <div class="msg-gui">
+                <h2 >Message:</h2>
+                <p id="messageOutput">XXX YYY ZZZ</p>
+              </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Nav Bar-->
+    <nav>
+        <a href="index.html">
+          <i class="fa fa-home" style="font-size: 29px; color: #22a6f27e"></i>
+          <span class="tooltip">Home</span>
+        </a>
+        <a href="Projects.html">
+          <i class="fa fa-globe" style="font-size: 30px; color: #22a6f27e"></i>
+          <span class="tooltip">Projects</span>
+        </a>
+        <a href="Skills.html">
+          <i class="fab fa-xbox" style="font-size: 30px; color: #22a6f27e"></i>
+          <span class="tooltip">Skills</span>
+        </a>
+        <a href="About.html">
+          <i
+            class="fas fa-exclamation-circle"
+            style="font-size: 30px; color: #22a6f27e"
+          ></i>
+          <span class="tooltip">About Me</span>
+        </a>
+        <a href="">
+          <i
+            class="fa fa-address-book-o"
+            style="font-size: 30px; color: #ff204e"
+          ></i>
+          <span class="tooltip">Contact Me</span>
+        </a>
+      </nav>
+
+      <div id="app"></div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react-dom.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
+
+    <!--Custom Js-->
+    <script src="./general css and js components/index.js"></script>
+    <script src="./js/contact.js"></script>
+
+    <!--gui card slider-->
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            VanillaTilt.init(document.querySelectorAll(".gui-box"), {
+                glare: true,
+                "max-glare": 1,
+            });
+        });
+     </script>   
+</body>
+</html>
