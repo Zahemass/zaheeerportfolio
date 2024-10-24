@@ -22,7 +22,7 @@ body {
   position: fixed;
   width: 50px; /* Adjust width as needed */
   height: 50px; /* Adjust height as needed */
-  background-image: url('../images/cursor.png'); /* Path to your cursor image */
+  background-image: url('../Images/cursor.png'); /* Path to your cursor image */
   background-size: contain; /* Ensure the image fits within the div */
   background-repeat: no-repeat;
   pointer-events: none;
