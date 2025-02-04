@@ -13,24 +13,23 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: none;
 }
 
 /* cursor design */
-.cursor {
+/*.cursor {
   z-index: 9999;
   position: fixed;
-  width: 50px; /* Adjust width as needed */
-  height: 50px; /* Adjust height as needed */
-  background-image: url('../Images/cursor.png'); /* Path to your cursor image */
-  background-size: contain; /* Ensure the image fits within the div */
-  background-repeat: no-repeat;
-  pointer-events: none;
-  box-shadow: 0 0 20px #2697e800, 0 0 60px #2697e800, 0 0 100px #2697e800;
-  animation: colors 5s infinite;
-  transform: translate(-50%, -50%);
-  display: none; /* Initially hidden */
-}
+  /*width: 50px; /* Adjust width as needed */
+  /*height: 50px; /* Adjust height as needed */
+  /*background-image: url('../Images/cursor.png'); /* Path to your cursor image */
+  /*background-size: contain; /* Ensure the image fits within the div */
+  /*background-repeat: no-repeat;
+  /*pointer-events: none;
+  /*box-shadow: 0 0 20px #2697e800, 0 0 60px #2697e800, 0 0 100px #2697e800;
+  /*animation: colors 5s infinite;
+  /*transform: translate(-50%, -50%);
+  /*display: none; /* Initially hidden */
+/*}
 
 @keyframes colors {
   0% {
@@ -46,10 +45,10 @@ body {
   position: absolute;
   background: #2697e800;
   width: 60px; /* Adjust size as needed */
-  height: 60px; /* Adjust size as needed */
-  opacity: 0.2;
-  transform: translate(-30%, -30%);
-  border-radius: 50%;
+  /*height: 60px; /* Adjust size as needed */
+  /*opacity: 0.2;
+  /*transform: translate(-30%, -30%);
+  /*border-radius: 50%;
 }
 
 /* Navbar */
