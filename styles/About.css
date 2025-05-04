@@ -4,6 +4,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800");
 
+.whatsapp{
+  position: fixed;
+  z-index: 10000;
+  height: 100px;
+  width: 100px;
+  right: 30px;
+  bottom: 70px;
+}
+  
 
 /* title and para */
 section {

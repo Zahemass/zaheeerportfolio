@@ -135,7 +135,14 @@
     overflow-wrap: break-word; /* Ensure long words break */
     max-width: 100%; /* Ensure the text does not overflow the box */
 }
-
+.whatsapp{
+  position: fixed;
+  z-index: 10000;
+  height: 100px;
+  width: 100px;
+  right: 30px;
+  bottom: 70px;
+}
   
 
   @media only screen and (max-width: 600px) {

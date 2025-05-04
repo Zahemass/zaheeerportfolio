@@ -60,11 +60,11 @@
             </p>
         </div>
         <div class="contact-box">
-            <form action="">
-                <input type="text" placeholder="Name" id="nameInput" autocomplete="off" required>
-                <input type="email" placeholder="E-mail"  id="emailInput" autocomplete="off" required>
-                <textarea name="" id="messageInput" placeholder="Message" maxlength="150" autocomplete="off" required></textarea>
-                <button> Send Message </button>
+            <form method="post" action="https://script.google.com/macros/s/AKfycbyI4ND55I0z-8LvV7QBzMsoXVXwpVJQ28XisksrLIgyAnFuf42tZ8Hl7kxZV8adNlSa/exec">
+                <input type="text" placeholder="Name" name="name" id="nameInput" autocomplete="off" required>
+                <input type="email" placeholder="E-mail" name="email" id="emailInput" autocomplete="off" required>
+                <textarea id="messageInput" name="message" placeholder="Message" maxlength="150" autocomplete="off" required></textarea>
+                 <button>  <a href="./Thankyou.html" style="text-decoration:none; color:whitesmoke;">Send Message </a> </button> 
             </form>
             <div class="gui-box" data-tilt>
               <div class="content-user">
@@ -87,7 +87,8 @@
         </div>
     </section>
 
-
+    <!--Whatsapp-->
+    <a href="https:/wa.me/919789893978" target="_blank"> <img class="whatsapp" src="./Images/whatsapp.png" alt=""> </a>
     <!--Nav Bar-->
     <nav>
         <a href="index.html">
